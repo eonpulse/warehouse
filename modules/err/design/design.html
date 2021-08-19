@@ -1,0 +1,259 @@
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="shortcut icon" sizes="196x196" href="icon-196.png">
+<STYLE type="text/css">
+body {
+	margin: 50;
+	padding: 50;	
+	background:#fff;
+	//font-size:6pt;
+	color:black;
+	font-family: Arial
+	-moz-box-sizing: border-box;
+    -opera-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+td {
+vertical-align: top;
+}
+.top {
+	background:#0055bb;
+	font-style:italic
+}
+.main {
+	background:#ffffff;
+}
+.bottom {
+	background:#00bb55;
+	font-style:italic;
+}
+.left {
+	vertical-align:top;
+	width:150px;
+}
+.right {
+	width:150px;
+}
+
+.input {
+    //border: 2px solid red;
+    //position: absolute;
+    z-index: 90;
+    width: 500px;
+    height: 90px;
+    
+    padding: 10px;
+    padding-top: 25px;
+    padding-left: 250px;
+    //display: none;
+}
+
+.instruction_files {
+    //border: 2px solid red;
+    //position: absolute;
+    padding: 10px;
+    //padding-left: 150px;
+    background:#fff;
+    //width: calc(100% - 150px);
+    //height: 100%;
+}
+.instruction_show {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    background:#fff;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#searchbtn {
+    background-image: url(/images/menu.png);
+    width:72px; height: 72px;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; /* Положение от нижнего края */
+    top: 15px; /* Положение от правого края */
+    z-index: 100;
+    cursor: pointer;
+}
+
+#bprlogo {
+    background-image: url(/images/bpr.png);
+    width:200px; height: 95px;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; /* Положение от нижнего края */
+    top: 15px; /* Положение от правого края */
+    z-index: 100;
+}
+
+#backbtn {
+    background-image: url(/images/back.png);
+    width:72px; height: 72px;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; /* Положение от нижнего края */
+    top: 15px; /* Положение от правого края */
+    z-index: 101;
+    display: none;
+    cursor: pointer;
+}
+
+.instruction_input input{
+    float: left;
+}
+
+#detail_number {
+    font-size: 50px;
+    width:300px;
+}
+
+.ui-menu-item-wrapper {
+    font-size: 30px;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    border: none; 
+    display: none;
+}
+
+.link {
+    width: 300px;
+    height: 50px;
+    vertical-align: middle;
+    border: 2px solid #323884;
+    margin: 3px;
+    padding: 5px;
+    padding-left: 50px;
+    float: left;
+    cursor: pointer;
+    border-radius: 10px;
+    background-position: 3px 5px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.typevideo {
+    background-image: url(/images/video.png);
+    background-repeat: no-repeat
+}
+.typepdf {
+    background-image: url(/images/pdf.png);
+    background-repeat: no-repeat;
+}
+
+#detail_load {
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.detail_name {
+    padding-left: 10px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #323884;
+}
+
+.greenline {
+    margin: 5px;
+    width: 99%;
+    height: 6px;
+    background-color: #71b635;
+    border-radius: 2px;
+}
+
+.blueline {
+    margin: 5px;
+    width: 99%;
+    height: 6px;
+    background-color: #323884;
+    border-radius: 2px;
+}
+
+.cell {
+    border-bottom: 1px solid #bbb;
+    //border-right: 1px solid black;    
+    display: table-cell;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.line {
+    display: table-row;
+
+}
+
+.caption {
+    display: table-cell;
+    border: 1px solid black; 
+    font-weight: bold;
+    text-align: center;
+    background-color: #ddd;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table {
+    margin: 10px;
+    //border-top: 1px solid black;
+    //border-left: 1px solid black;
+
+}
+
+.status1 {
+    color: #006600;
+}
+.status2 {
+    color: #aaaaaa;
+}
+.status3 {
+    color: #cc0000;
+}
+.status4 {
+    color: #cc0000;
+}
+.status5 {
+    color: #cc0000;
+}
+.status6 {
+    color: #0000d;
+}
+
+.inputform {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black; 
+}
+
+.inputform input {
+    margin: 5px;
+}
+
+span.big {
+    font-size: 19px;
+}
+    
+.product, .lot, .terminal {    
+    cursor: pointer;
+}
+
+</STYLE>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link rel="manifest" href="/manifest.json">
+
+<script type="text/javascript" src="/scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery-ui-git.js"></script>
+
+
+<body>
+{%main_module%}
+
+</body>

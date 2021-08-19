@@ -1,0 +1,354 @@
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="shortcut icon" sizes="196x196" href="icon-196.png">
+<STYLE type="text/css">
+body {
+	margin: 0;
+	padding: 0;	
+	background:#fff;
+	//font-size:6pt;
+	color:black;
+	font-family: Arial
+	-moz-box-sizing: border-box;
+    -opera-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -khtml-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+td {
+vertical-align: top;
+}
+.top {
+	background:#0055bb;
+	font-style:italic
+}
+.main {
+	background:#ffffff;
+}
+.bottom {
+	background:#00bb55;
+	font-style:italic;
+}
+.left {
+	vertical-align:top;
+	width:150px;
+}
+.right {
+	width:150px;
+}
+
+.input {
+    //border: 2px solid red;
+    //position: absolute;
+    z-index: 90;
+    width: 500px;
+    height: 90px;
+    
+    padding: 10px;
+    padding-top: 25px;
+    padding-left: 250px;
+    //display: none;
+}
+
+.instruction_files {
+    //border: 2px solid red;
+    //position: absolute;
+    padding: 10px;
+    //padding-left: 150px;
+    background:#fff;
+    //width: calc(100% - 150px);
+    //height: 100%;
+}
+.instruction_show {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    background:#fff;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#searchbtn {
+    background-image: url(/images/menu.png);
+    width:72px; height: 72px;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; /* Положение от нижнего края */
+    top: 15px; /* Положение от правого края */
+    z-index: 100;
+    cursor: pointer;
+}
+
+#bprlogo {
+    background-image: url(/images/bpr.png);
+    width:200px; height: 95px;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; /* Положение от нижнего края */
+    top: 15px; /* Положение от правого края */
+    z-index: 100;
+}
+
+#backbtn {
+    background-image: url(/images/back.png);
+    width:72px; height: 72px;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 15px; /* Положение от нижнего края */
+    top: 15px; /* Положение от правого края */
+    z-index: 101;
+    display: none;
+    cursor: pointer;
+}
+
+.instruction_input input{
+    float: left;
+}
+
+#detail_number {
+    font-size: 50px;
+    width:300px;
+}
+
+.ui-menu-item-wrapper {
+    font-size: 30px;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    border: none; 
+    display: none;
+}
+
+.link {
+    width: 300px;
+    height: 50px;
+    vertical-align: middle;
+    border: 2px solid #323884;
+    margin: 3px;
+    padding: 5px;
+    padding-left: 50px;
+    float: left;
+    cursor: pointer;
+    border-radius: 10px;
+    background-position: 3px 5px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.typevideo {
+    background-image: url(/images/video.png);
+    background-repeat: no-repeat
+}
+.typepdf {
+    background-image: url(/images/pdf.png);
+    background-repeat: no-repeat;
+}
+
+#detail_load {
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.detail_name {
+    padding-left: 10px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #323884;
+}
+
+.greenline {
+    margin: 5px;
+    width: 99%;
+    height: 6px;
+    background-color: #71b635;
+    border-radius: 2px;
+}
+
+.blueline {
+    margin: 5px;
+    width: 99%;
+    height: 6px;
+    background-color: #323884;
+    border-radius: 2px;
+}
+
+.cell {
+    border-bottom: 1px solid #bbb;
+    //border-right: 1px solid black;    
+    display: table-cell;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.line {
+    display: table-row;
+
+}
+
+.captionline {
+    display: table-row;
+}
+
+.captionline div {
+    
+}
+
+.caption {
+    display: table-cell;
+    border: 1px solid black; 
+    font-weight: bold;
+    text-align: center;
+    background-color: #ddd;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table {
+    margin: 25px;
+    //border-top: 1px solid black;
+    //border-left: 1px solid black;
+
+}
+
+.status1 {
+    color: #006600;
+}
+.status2 {
+    color: #aaaaaa;
+}
+.status3 {
+    color: #cc0000;
+}
+.status4 {
+    color: #cc0000;
+}
+.status5 {
+    color: #cc0000;
+}
+.status6 {
+    color: #0000d;
+}
+
+.inputform {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black; 
+}
+
+.inputform input {
+    margin: 5px;
+}
+
+span.big {
+    font-size: 16px;
+    font-weight: bold;
+}
+    
+.status_red {
+   background-color: #ff5050;
+}  
+.status_orange {
+    background-color: #ff963b;
+}  
+.status_ellow {
+    background-color: #ffff77;
+} 
+   
+.dellink {   
+    cursor: pointer;
+    display: inline;
+    margin: 5px;
+}
+
+</STYLE>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<link rel="manifest" href="/manifest.json">
+
+<script type="text/javascript" src="/scripts/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/scripts/jquery-ui-git.js"></script>
+
+
+<script>
+function ChangeFile(folder, file, type) {
+    if(type == "pdf") {
+        $("#pdf").attr("src", "/files/instructions/"+folder+"/"+file);
+        $(".instruction_show").show();
+        $("#pdf").show();
+        $("#backbtn").show();
+        $("#bprlogo").hide();
+    } else {
+        $("#pdf").hide();
+    }
+    if(type == "mp4") {
+        $("#video").attr("src", "/files/instructions/"+folder+"/"+file);
+        $(".instruction_show").show();
+        $("#video").show();
+        $("#backbtn").show();
+        $("#bprlogo").hide();
+    } else {
+        $("#video").hide();
+    }
+	return false;
+}
+$(document.body).ready(function(){
+    prodnum='';
+    $("#_searchbtn").click(function(){
+        if($(".instruction_input").is(':visible')) {
+            $(".instruction_input").hide('slide', {direction: 'left'}, 500);
+        } else {
+            $(".instruction_input").show('slide', {direction: 'left'}, 500);
+        }
+    });
+    $("#backbtn").click(function(){
+        $("#backbtn").hide();
+        $("#bprlogo").show();
+        $("#video")[0].pause();
+        $("#video")[0].src="";        
+        $("#video").hide();
+        $("#pdf").hide();
+        $(".instruction_show").hide();
+    });
+
+    $( "#detail_number" ).focus(function() {
+        prodnum=$("#detail_number").val();
+        $("#detail_number").val('');
+    });
+
+   $( "#detail_number" ).focusout(function() {
+        if($("#detail_number").val()=='') {
+           $("#detail_number").val(prodnum);
+        }
+   });
+    
+});
+
+
+
+$(function(){
+    $(".dellink").click(function() {
+        if(confirm('Подтвердите удаление коробки\nИзделие '+$(this).data('product')+'\nПартия '+$(this).data('lot')+'\nКоробка '+$(this).data('box'))) {
+            //alert('Удаляем\nИзделие '+$(this).data('product')+'\nПартия '+$(this).data('lot')+'\nКоробка '+$(this).data('box'));
+            $.post("delbox.php", { product: $(this).data('product'), lot: $(this).data('lot'), box: $(this).data('box'), note: $(this).data('note') })
+            .done(function(data) {
+              alert("Data Loaded: " + data);
+              location.reload();
+            });
+            
+            
+        }
+    });
+});
+
+</script>
+
+
+<body>
+{%main_module%}
+
+</body>

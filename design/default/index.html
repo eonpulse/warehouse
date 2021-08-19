@@ -1,0 +1,66 @@
+<STYLE type="text/css">
+body {
+	margin: 0;
+	padding: 0;	
+	background:#C0FFEE;
+	font-size:6pt;
+	color:black;
+	font-family: Arial
+}
+td {
+vertical-align: top;
+}
+.top {
+	background:#0055bb;
+	font-style:italic
+}
+.main {
+	background:#ffffff;
+}
+.bottom {
+	background:#00bb55;
+	font-style:italic;
+}
+.left {
+	vertical-align:top;
+	width:150px;
+}
+.right {
+	width:150px;
+}
+
+.link {
+    cursor: pointer;
+}
+.instruction_input {
+    border: 2px solid red;
+}
+.instruction_files {
+    border: 2px solid green;
+}
+.instruction_show {
+    border: 2px solid blue;
+}
+
+</STYLE>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+	<tr>
+		<td class="top"><h1>{%top%}</h1></td>
+	</tr>
+	<tr>
+		<td>
+			<table width="100%" border="0" cellspacing="0" cellpadding="2">
+				<tr>
+					<td class="left">{%login%}</td>
+					<td class="main">{%main_module%}</td>
+					<td class="right">Правое поле</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="bottom"><font size="-1"><i>{%bottom%}</i></font></td>
+	</tr>
+</table>
+</body>
